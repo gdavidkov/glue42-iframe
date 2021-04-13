@@ -2,11 +2,11 @@
 <html>
 <script>
     if (window.Glue) {
-        Glue((glue) => {
-            console.log("glue ready");
-            window.glue = glue;
-        })
-            .then()
+        Glue({})
+            .then((glue) => {
+                console.log("glue ready");
+                window.glue = glue;
+            })
             .catch(console.error)
     }
 </script>
@@ -15,4 +15,5 @@
     <h2>Glue42 Iframe</h2>
     <iframe id="frame" src="https://www.glue42.com" height="200" width="400"></iframe>
 </body>
+
 </html>

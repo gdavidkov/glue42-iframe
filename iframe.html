@@ -2,11 +2,11 @@
 <html>
 <script>
     if (window.Glue) {
-        Glue((glue) => {
-            console.log("glue ready");
-            window.glue = glue;
-        })
-            .then()
+        Glue({})
+            .then((glue) => {
+                console.log("glue ready");
+                window.glue = glue;
+            })
             .catch(console.error)
     }
 </script>
